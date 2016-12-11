@@ -1,7 +1,7 @@
 xpand
 =====
 
-> jQuery pluging for accordions and expanding blocks
+> jQuery plugin for accordions and expanding blocks
 
 Displays target on `this` click and hides on another.
 
