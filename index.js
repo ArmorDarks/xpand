@@ -10,12 +10,12 @@
  * @param {string} [userOptions.expandingClass]     = 'is-expanding'       Classing for expanding target
  * @param {string} [userOptions.collapsingClass]    = 'is-collapsing'      Class for collapsing target
  * @param {string} [userOptions.expandedClass]      = 'is-expanded'        Class for fully expanded target
- * @param {string} [userOptions.defaultScopeQuery]  = '.js-expand__scope'  Default query of container defining scope
- * @param {string} [userOptions.defaultTargetQuery] = '.js-expand__target' Default query of container to be expanded
+ * @param {string} [userOptions.defaultScopeQuery]  = '.js-xpand__scope'   Default query of container defining scope
+ * @param {string} [userOptions.defaultTargetQuery] = '.js-xpand__target'  Default query of container to be expanded
  *
  * @return {object} `this`
  */
-export default $.fn.expand = function (userOptions) {
+export default $.fn.xpand = function (userOptions) {
   const options = $.extend({
     duration: 600,
     easing: '',
@@ -23,8 +23,8 @@ export default $.fn.expand = function (userOptions) {
     expandingClass: 'is-expanding',
     collapsingClass: 'is-collapsing',
     expandedClass: 'is-expanded',
-    defaultScopeQuery: '.js-expand__scope',
-    defaultTargetQuery: '.js-expand__target'
+    defaultScopeQuery: '.js-xpand__scope',
+    defaultTargetQuery: '.js-xpand__target'
   }, userOptions)
 
   const {
@@ -40,8 +40,8 @@ export default $.fn.expand = function (userOptions) {
 
   return this.each((i, element) => {
     const $this = $(element)
-    const targetQuery = $this.data('expand') || defaultTargetQuery
-    const expandScope = $this.data('expand-scope')
+    const targetQuery = $this.data('xpand') || defaultTargetQuery
+    const expandScope = $this.data('xpand-scope')
     const expandScopeQuery = typeof expandScope === 'string' ? expandScope : defaultScopeQuery
 
     let $targets
