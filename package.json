@@ -1,0 +1,33 @@
+{
+  "name": "xpand",
+  "version": "1.0.0",
+  "description": "jQuery pluging for accordions and expanding blocks",
+  "homepage": "https://github.com/ArmorDarks/xpand",
+  "author": "Serj Lavrin (https://github.com/ArmorDarks)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ArmorDarks/xpand.git"
+  },
+  "bugs": {
+    "url": "https://github.com//ArmorDarks/xpand/issues"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "jquery",
+    "javascript",
+    "es6",
+    "accordion"
+  ],
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "7.1.1",
+    "standard": "8.6.0"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
